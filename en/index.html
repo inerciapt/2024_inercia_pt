@@ -48,11 +48,47 @@
 <body>
    <div w3-include-html="./header.html"></div>
 
-   <section class="b-hero">
+   <section id="live-banner-container">
+      <div class="img-container">
+         <img alt="" loading="lazy" decoding="async" src="../images/banner_live-1920.webp"
+         srcset="../images/banner_live-400.webp 400w, ../images/banner_live-600.webp 600w, ../images/banner_live-900.webp 900w, ../images/banner_live-1400.webp 1400w, ../images/banner_live-1920.webp 1920w"
+         sizes="100vw">
+      </div>
+
+      
+
+      <div id="live-banner">
+
+         <h2>We are Live!</h2>
+         <p>Don’t miss a moment of the event! We’re streaming it live so you can tune in from anywhere. Choose one streaming service below to join the live stream and be part of the excitement in real time. <br>Stay connected and experience the event as it unfolds!</p>
+
+         <div class="links-container">
+            <a class="twitch" href="https://www.twitch.tv/inercia_pt" aria-label="Twitch" target="_blank" rel="nofollow">
+               <svg width="100" viewBox="0 0 256 268" fill="white">
+                  <path
+                     d="M17.458 0 0 46.556v186.201h63.983v34.934h34.931l34.898-34.934h52.36L256 162.954V0H17.458Zm23.259 23.263H232.73v128.029l-40.739 40.741H128L93.113 226.92v-34.886H40.717V23.263Zm64.008 116.405H128V69.844h-23.275v69.824Zm63.997 0h23.27V69.844h-23.27v69.824Z">
+                  </path>
+               </svg>
+            </a>
+            <a class="yt" href="https://www.youtube.com/watch?v=ni8T7lEXZRc" aria-label="YouTube" target="_blank" rel="nofollow">
+               <svg width="100" viewBox="0 0 461 461" fill="white">
+                  <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                     c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                     C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                     c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- <section class="b-hero">
       <img alt="" loading="lazy" decoding="async" src="../images/new_badge-1920.webp"
          srcset="../images/new_badge-400.webp 400w, ../images/new_badge-600.webp 600w, ../images/new_badge-900.webp 900w, ../images/new_badge-1400.webp 1400w, ../images/new_badge-1920.webp 1920w"
          sizes="100vw">
-   </section>
+
+      
+   </section> -->
    <main tabindex="-1" id="main-content">
       <article>
          <div class="b-columns u-container b-cta">
