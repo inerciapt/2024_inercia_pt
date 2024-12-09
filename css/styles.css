@@ -1694,12 +1694,25 @@ thead .o-timetable__cell {
 		font-size: 28px;
 	}
 
-	#live-banner p {
+	/* #live-banner p {
 		display: none;
-	}
+	} */
 
 	#live-banner .links-container svg {
 		width: 48px;
+	}
+
+	#live-banner-container {
+		min-height: 100dvh;
+	}
+
+	#live-banner-container .img-container {
+		height: 100%;
+	}
+
+	#live-banner {
+		top: 64px;
+		justify-content: center;
 	}
 }
 
@@ -2638,5 +2651,39 @@ h3:hover .permalink {
 	50% {
 		transform: translateY(0);
 		opacity: 0;
+	}
+}
+
+.blink {
+	display: block;
+	line-height: 32px;
+	animation: blink;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@keyframes blink {
+	0% {
+		color: red;
+	}
+
+	25% {
+		color: white;
+	}
+
+	50% {
+		color: red;
+	}
+
+	75% {
+		color: white;
+	}
+
+	100% {
+		color: red;
 	}
 }
