@@ -2687,3 +2687,41 @@ h3:hover .permalink {
 		color: red;
 	}
 }
+
+/* POSTPARTY STUFF */
+
+#postparty-content {
+	padding-top: var(--site-nav-height);
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+article {
+}
+.highlight {
+	--color-postparty: #92FFF0;
+	color: var(--color-postparty);
+	text-transform: uppercase;
+	animation: post-blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes post-blink {
+	0% {
+		color:  var(--color-postparty);
+		transform: scale(1);
+	}
+	50% {
+		color: var(--color-postparty);
+		transform: scale(1);
+	}
+	55% {
+		color: white;
+		transform: scale(1.05);
+	}
+	100% {
+		color: var(--color-postparty);
+		transform: scale(1);
+	}
+}
