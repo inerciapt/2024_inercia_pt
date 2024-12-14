@@ -2691,13 +2691,55 @@ h3:hover .permalink {
 /* POSTPARTY STUFF */
 
 #postparty-content {
-	padding-top: var(--site-nav-height);
-	max-width: 1440px;
-	margin: 0 auto;
+	padding-top: 83px;
+	box-sizing: content-box;
+	max-width: 1382px;
+	overflow: hidden;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	/* padding-block-end: var(--unit-l); */
+	padding-inline-start: max(20px, min(5.55556vw, 80px));
+	padding-inline-end: max(20px, min(5.55556vw, 80px));
 }
 
-article {
+#postparty-content article {
+	display: block;
+	max-width: 1382px;
 }
+
+#postparty-content h2,
+#postparty-content p {
+	display: inline-block;
+}
+
+
+#postparty-content h2 {
+	margin-bottom: 10px;
+}
+
+#postparty-content p,
+#postparty-content a {
+	font-size: var(--fs-base);
+	line-height: 1.667;
+	color: var(--site-text-color);
+}
+
+#postparty-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#postparty-content ul li {
+	padding: 5px 0;
+}
+
+#postparty-content img {
+	max-width: 100%;
+}
+
 .highlight {
 	--color-postparty: #92FFF0;
 	color: var(--color-postparty);
@@ -2707,19 +2749,28 @@ article {
 	animation-iteration-count: infinite;
 }
 
+.highlight[aria-current] {
+	color: var(--color-postparty);
+	animation: none;
+	transform: scale(1.05);
+}
+
 @keyframes post-blink {
 	0% {
-		color:  var(--color-postparty);
+		color: var(--color-postparty);
 		transform: scale(1);
 	}
+
 	50% {
 		color: var(--color-postparty);
 		transform: scale(1);
 	}
+
 	55% {
 		color: white;
 		transform: scale(1.05);
 	}
+
 	100% {
 		color: var(--color-postparty);
 		transform: scale(1);
