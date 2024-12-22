@@ -7,5 +7,5 @@ Directly updates on https://2024.inercia.pt
 # TODO
 
 - add press kit info and download link for it on contact page (waiting until it's done)
-- finish adding photo and additional info to all events on schedule page
+- missing blankets and tiles on merch page
 - add team information on contact page (maybe not needed?)
